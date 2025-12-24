@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C# Lessons</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    
+    <div class="top-bar">
+        <img src="logo.png" class="top-logo" alt="Logo">
+        <nav>
+            <a href="indexx.html">Home</a>
+            <a href="lessons.html">Lessons</a>
+            <a href="examples.html">Examples</a>
+            <a href="quiz.html">Quiz</a>
+        </nav>
+    </div>
+
+    <h1>C# Lessons</h1>
+
+    <div class="lesson-block" onclick="toggleLesson('input')">
+        <h2>1. How to Input Data in C#</h2>
+        <div id="input" class="lesson-content">
+            <pre>
+Console.Write("Enter your name: ");
+string name = Console.ReadLine();
+Console.WriteLine("Hello " + name);
+            </pre>
+        </div>
+    </div>
+
+    <div class="lesson-block" onclick="toggleLesson('numeric')">
+        <h2>2. Basic Numeric Operators</h2>
+        <div id="numeric" class="lesson-content">
+            <pre>
+int x = 10;
+int y = 3;
+Console.WriteLine(x + y);
+Console.WriteLine(x - y);
+Console.WriteLine(x * y);
+Console.WriteLine(x / y);
+            </pre>
+        </div>
+    </div>
+
+    <div class="lesson-block" onclick="toggleLesson('conditions')">
+        <h2>3. Conditions</h2>
+        <div id="conditions" class="lesson-content">
+            <pre>
+int age = 20;
+if (age >= 18)
+{
+    Console.WriteLine("Adult");
+}
+else
+{
+    Console.WriteLine("Minor");
+}
+            </pre>
+        </div>
+    </div>
+
+    <div class="lesson-block" onclick="toggleLesson('loops')">
+        <h2>4. Loops</h2>
+        <div id="loops" class="lesson-content">
+            <pre>
+for (int i = 1; i <= 5; i++)
+{
+    Console.WriteLine(i);
+}
+            </pre>
+        </div>
+    </div>
+
+   
+    <div class="lesson-block" onclick="toggleLesson('output')">
+        <h2>5. How to Display the Output</h2>
+        <div id="output" class="lesson-content">
+            <pre>
+string message = "Welcome to C# Learning!";
+Console.WriteLine(message);
+
+int result = 5 + 10;
+Console.WriteLine("The result is: " + result);
+            </pre>
+        </div>
+    </div>
+
+   
+    <footer class="bottom-bar">
+        <p>© 2025 CBT Training Website – All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
+
